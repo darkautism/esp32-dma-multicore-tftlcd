@@ -1,4 +1,8 @@
-use embedded_graphics::{prelude::{Dimensions, DrawTarget, Point, RgbColor, Size}, primitives::Rectangle, Pixel};
+use embedded_graphics::{
+    Pixel,
+    prelude::{Dimensions, DrawTarget, Point, RgbColor, Size},
+    primitives::Rectangle,
+};
 
 use crate::config::LCD_BUFFER_SIZE;
 

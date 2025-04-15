@@ -218,7 +218,7 @@ fn render_system(mut prev_time: Local<u64>, mut prev_update_time: Local<u64>) {
         )
         .unwrap();
     Text::new(
-        &format!("FPS:{}, sps:{}", fps,sps),
+        &format!("FPS:{}, sps:{}", fps, sps),
         Point::new(20, 20),
         MonoTextStyle::new(&FONT_8X13, Rgb565::WHITE),
     )

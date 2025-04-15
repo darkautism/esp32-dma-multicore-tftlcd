@@ -712,6 +712,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "esp32-dma-multicore-tftlcd"
+version = "0.1.0"
+dependencies = [
+ "bevy_ecs",
+ "embassy-executor",
+ "embassy-sync",
+ "embassy-time",
+ "embedded-graphics",
+ "embedded-hal 1.0.0",
+ "embedded-hal-bus",
+ "esp-alloc",
+ "esp-backtrace",
+ "esp-hal",
+ "esp-hal-embassy",
+ "esp-println",
+ "heapless",
+ "log",
+ "mipidsi",
+ "static_cell",
+]
+
+[[package]]
 name = "fixedbitset"
 version = "0.5.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1368,28 +1390,6 @@ name = "void"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d"
-
-[[package]]
-name = "wasm-player"
-version = "0.1.0"
-dependencies = [
- "bevy_ecs",
- "embassy-executor",
- "embassy-sync",
- "embassy-time",
- "embedded-graphics",
- "embedded-hal 1.0.0",
- "embedded-hal-bus",
- "esp-alloc",
- "esp-backtrace",
- "esp-hal",
- "esp-hal-embassy",
- "esp-println",
- "heapless",
- "log",
- "mipidsi",
- "static_cell",
-]
 
 [[package]]
 name = "winapi-util"

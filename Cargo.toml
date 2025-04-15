@@ -1,5 +1,5 @@
 [package]
-name = "wasm-player"
+name = "esp32-dma-multicore-tftlcd"
 version = "0.1.0"
 authors = ["Kautism <kautism@gmail.com>"]
 edition = "2024"
