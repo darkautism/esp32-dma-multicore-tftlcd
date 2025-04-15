@@ -1,0 +1,30 @@
+[package]
+name = "wasm-player"
+version = "0.1.0"
+authors = ["Kautism <kautism@gmail.com>"]
+edition = "2024"
+license = "MIT OR Apache-2.0"
+
+[profile.release]
+opt-level = "s"
+
+[dependencies]
+esp-hal = { version = "1.0.0-beta.0", features = ["esp32", "unstable"] }
+esp-backtrace = { version = "0.15.1", features = ["panic-handler", "println"] }
+esp-println = { version = "0.13", features = [ "log" ] }
+log = { version = "0.4.26" }
+esp-alloc = "0.7.0"
+embedded-graphics = "0.8.1"
+embedded-hal = "1.0.0"
+mipidsi = { path = "../mipidsi" }
+heapless = "0.8.0"
+embedded-hal-bus = "0.3.0"
+bevy_ecs = { git = "https://github.com/bevyengine/bevy.git", default-features = false }
+embassy-time = "0.4.0"
+esp-hal-embassy = "0.7.0"
+embassy-executor = "0.7.0"
+embassy-sync = "0.6.2"
+static_cell = "2.1.0"
+
+[features]
+default = [ "esp-hal/esp32", "esp-backtrace/esp32", "esp-println/esp32", "esp-hal-embassy/esp32" ]

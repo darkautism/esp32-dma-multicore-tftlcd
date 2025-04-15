@@ -1,0 +1,18 @@
+[target.xtensa-esp32-none-elf]
+runner = "espflash flash --monitor"
+
+[env]
+ESP_LOG="INFO"
+# ESP_HAL_CONFIG_PSRAM_MODE = "quad"
+
+[build]
+rustflags = [
+  "-C", "link-arg=-nostartfiles",
+  "-C", "link-arg=-Wl,-Tlinkall.x",
+  "-C", "link-arg=-nostartfiles",
+]
+
+target = "xtensa-esp32-none-elf"
+
+[unstable]
+build-std = ["alloc", "core"]
