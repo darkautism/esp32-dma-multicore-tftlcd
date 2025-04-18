@@ -8,7 +8,6 @@ use core::ptr::addr_of_mut;
 
 use alloc::boxed::Box;
 use alloc::format;
-use alloc::string::ToString;
 use bevy_ecs::prelude::*;
 use bevy_ecs::{schedule::Schedule, world::World};
 use config::{LCD_HEIGHT, LCD_WIDTH};
