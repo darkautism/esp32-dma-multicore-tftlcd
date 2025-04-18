@@ -17,3 +17,17 @@ It's depence on esp-hal.
 | GPIO5  | CS |
 | GPIO16  | DC/RS |
 | GPIO17  | RST |
+
+## Run
+
+This project cannot running on debug mode, you will got oom when you running on debug mode.
+
+```Bash
+cargo run --release
+```
+
+## Double buffer and single buffer
+
+Double buffer increase 7 FPS.
+
+Single buffer have 30 FPS.

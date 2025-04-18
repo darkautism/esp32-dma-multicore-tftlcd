@@ -16,7 +16,7 @@ log = { version = "0.4.26" }
 esp-alloc = "0.7.0"
 embedded-graphics = "0.8.1"
 embedded-hal = "1.0.0"
-mipidsi = { path = "../mipidsi" }
+mipidsi = { git = "https://github.com/darkautism/mipidsi.git" }
 heapless = "0.8.0"
 embedded-hal-bus = "0.3.0"
 bevy_ecs = { git = "https://github.com/bevyengine/bevy.git", default-features = false }

@@ -946,6 +946,7 @@ dependencies = [
 [[package]]
 name = "mipidsi"
 version = "0.9.0"
+source = "git+https://github.com/darkautism/mipidsi.git#c9b005b9e02b6be9ce1711efbcec144cf80318cf"
 dependencies = [
  "embedded-graphics-core",
  "embedded-hal 1.0.0",
